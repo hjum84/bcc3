@@ -34,7 +34,7 @@ def chat():
     else:
         quota = 0
 
-    if quota >= 10:
+    if quota >= 3:
         return jsonify({"reply": "You have used all your quota for today."}), 200
 
     # GPT-3.5-turbo를 사용해 질문에 응답
